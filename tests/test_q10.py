@@ -5,8 +5,7 @@ import pytest
 # src ディレクトリをパスに追加（pytest.ini がない場合）
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from q10
- import array123
+from q10 import array123
 
 @pytest.mark.parametrize("nums, expected", [
     ([1, 1, 2, 3, 1], True),
