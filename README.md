@@ -26,6 +26,13 @@ git checkout -b (学生番号)
 
 #### 2. 実装したソースを add、commit
 
+#### 3. まとめて確認したい場合
+
+```bash
+pytest --tb=no --no-header --no-summary
+
+```
+
 ### 提出 16:50 - 17:00 (10 分)
 
 #### 1. 以下のスクリプトを実行し、成果物を github に push する
