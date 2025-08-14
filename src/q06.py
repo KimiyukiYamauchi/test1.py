@@ -12,4 +12,9 @@
 # 　　　　2つの引数(整数)が、どちらも10以上20以下でない場合は0を返す
 
 def max1020(a, b):
-    return a
+    if (a > 20 and b > 20) or (a < 10 and b > 20) or (a > 20 and b < 10):
+        return 0
+    elif ((a < 20) > (b > 10)) or ((a < 20) > (b < 10)):
+        return a
+    elif ((b < 20) > (a > 10)) or ((b < 20) > (a < 10)): 
+        return b
