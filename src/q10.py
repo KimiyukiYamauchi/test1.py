@@ -11,4 +11,7 @@
 # 
 
 def array123(nums):
-    return False
+    if int[1, 2, 3]:
+        return True
+    else:
+        return False
