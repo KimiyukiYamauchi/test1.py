@@ -12,5 +12,8 @@
 # 
 #/
 
-def del_del(str):
-    return str
+def del_del(s):
+    if s.count("del"):
+        return s[:4] 
+    else:
+        return s

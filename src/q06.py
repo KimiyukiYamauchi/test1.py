@@ -12,4 +12,11 @@
 # 　　　　2つの引数(整数)が、どちらも10以上20以下でない場合は0を返す
 
 def max1020(a, b):
-    return a
+    diff_a = 10 <= a <= 20
+    diff_b = 10 <= b <= 20
+    if diff_a > diff_b:
+        return a
+    elif diff_b > diff_a:
+        return b
+    else:
+        return 0

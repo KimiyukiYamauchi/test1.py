@@ -9,5 +9,8 @@
 # @return 引数(文字列)が'hi'から始まっていればtrue、それ以外はfalseを返す
 # 
 
-def start_hi(str):
-    return False
+def start_hi(s):
+    if s.startswith("hi"):
+        return True
+    else:
+        return False
