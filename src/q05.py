@@ -13,4 +13,7 @@
 #/
 
 def del_del(str):
-    return str
+    if str[1:3] == "del":
+        return str[:1] + str[4:] 
+    else:
+        return str

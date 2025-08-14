@@ -9,4 +9,6 @@
 # @return 上記の条件での数を返す
 
 def last2(str):
-    return -1
+    count 0
+
+    
