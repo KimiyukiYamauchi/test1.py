@@ -13,4 +13,5 @@
 #/
 
 def del_del(str):
-    return str
+    str[:2] = del
+    return del

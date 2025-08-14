@@ -12,4 +12,4 @@
 # 
 
 def sum_double(a, b):
-    return -1
+        return a + b or (a + b ) * 2 

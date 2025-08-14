@@ -10,4 +10,7 @@
 # 
 
 def start_hi(str):
-    return False
+    if len(str) > 3 and str[:1]:
+        return True
+    else:
+        return False
