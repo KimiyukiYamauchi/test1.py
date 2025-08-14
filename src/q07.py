@@ -11,4 +11,7 @@
 # 　　　　3文字に満たない場合はすべてを大文字に変換して返す
 
 def end_up(str):
-    return str
+    if len(str) < 3:
+        return str.upper()
+    else:
+        return str[:-3] + str[-3:].upper()

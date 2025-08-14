@@ -12,4 +12,7 @@
 # 
 
 def front3(s):
-    return s
+    front3 = s[:3]
+    if len(s) < 3:
+        front3 = s
+    return front3 * 3
