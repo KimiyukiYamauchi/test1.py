@@ -12,4 +12,5 @@
 # 
 
 def front_times(str, n):
-    return ''
+    return str[:3] * n
+

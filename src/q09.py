@@ -9,4 +9,7 @@
 # @return 上記の条件での数を返す
 
 def last2(str):
-    return -1
+    if len(str) < 2:
+        return 0
+    last_two = str[-2:]  # 末尾2文字
+    return str.count(last_two)    

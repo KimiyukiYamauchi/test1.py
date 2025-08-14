@@ -11,4 +11,7 @@
 # 
 
 def array123(nums):
-    return False
+    if len(nums) < 3:
+        return False
+    return True
+

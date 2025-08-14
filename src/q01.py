@@ -12,4 +12,7 @@
 # 
 
 def sum_double(a, b):
-    return -1
+    total = a + b
+    if a == b:
+        return total * 2
+    return total

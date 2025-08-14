@@ -13,4 +13,6 @@
 #/
 
 def del_del(str):
+    if len(str) >= 4 and str[1:4] == "del":
+        return str[0] + str[4:]
     return str
