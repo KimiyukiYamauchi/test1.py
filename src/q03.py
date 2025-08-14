@@ -11,5 +11,7 @@
 #         引数が3文字に満たない場合はそれを3回結合する
 # 
 
-def front3(s):
-    return s
+def front3(s: str) -> str:
+    front = s[:3]
+    return front * 3
+
