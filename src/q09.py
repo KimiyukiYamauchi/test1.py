@@ -9,4 +9,9 @@
 # @return 上記の条件での数を返す
 
 def last2(str):
-    return -1
+    count = 0
+    for i in len(str):
+        if str[i:i+1] == str[-3:]:
+            count += 1
+    return count
+

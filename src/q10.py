@@ -11,4 +11,14 @@
 # 
 
 def array123(nums):
-    return False
+    a = 0
+    if len(nums) < 2:
+        return False
+    else:
+        for num in nums:
+            if nums[num-2] == 1 and nums[num-1] == 2 and  nums[num] == 3:
+                a += 1
+        if a >= 1:
+            return True
+        elif a == 0:
+            return False
