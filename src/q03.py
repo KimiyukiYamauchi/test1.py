@@ -12,4 +12,4 @@
 # 
 
 def front3(s):
-    return s
+    return s[0:3]*3

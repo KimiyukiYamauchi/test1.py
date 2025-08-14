@@ -11,4 +11,9 @@
 # 
 
 def array123(nums):
+    if len(nums)<3:
+        return False
+    for i in nums:
+        if i==1 and nums[nums.index(1)+1]==2 and nums[nums.index(1)+2]==3:
+            return True
     return False
