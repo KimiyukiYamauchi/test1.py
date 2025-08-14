@@ -12,4 +12,7 @@
 # 
 
 def front_times(str, n):
-    return ''
+    if len(str) >= 3:
+        return str[:3] * n
+    else:
+        return str * n

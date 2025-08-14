@@ -1,4 +1,4 @@
-# 引数(文字列)が'hi'から始まっていればtrue、それ以外はfalseを返す関数
+# 引数(文字列):が'hi'から始まっていればtrue、それ以外はfalseを返す関数
 # 例：
 # 　start_hi("hi there") → true
 # 　start_hi("hi") → true
@@ -10,4 +10,4 @@
 # 
 
 def start_hi(str):
-    return False
+    return str[:2] == "hi"

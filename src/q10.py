@@ -11,4 +11,4 @@
 # 
 
 def array123(nums):
-    return False
+    return "1,2,3" in nums
