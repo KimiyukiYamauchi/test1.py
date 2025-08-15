@@ -33,6 +33,14 @@ pytest --tb=no --no-header --no-summary
 
 ```
 
+#### 4. 正解数の確認
+
+```bash
+python run_individual_tests.py
+cat result.txt | python count_passed_tests.py
+
+```
+
 ### 提出 16:50 - 17:00 (10 分)
 
 #### 1. 以下のスクリプトを実行し、成果物を github に push する
