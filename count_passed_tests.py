@@ -1,14 +1,18 @@
-import sys
 import re
 
-def count_passed_scripts(lines):
+def count_passed_scripts_from_file(file_path):
     passed_count = 0
-    for line in lines:
-        if line.startswith("tests/") and re.match(r"tests/test_.*\.py [.\s]+\[?\d*%?\]?$", line.strip()):
-            # テスト結果部分（dotsなど）を抽出
-            result_part = re.split(r"\s+", line.strip())[1]
-            if 'F' not in result_part and 'E' not in result_part:
-                passed_count += 1
+
+    with open(file_path, encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            # テストファイル行にマッチ (例: tests/test_q01.py ........)
+            match = re.match(r"^(tests/test_.*\.py)\s+([.FE]+)", line)
+            if match:
+                result_str = match.group(2)
+                if 'F' not in result_str and 'E' not in result_str:
+                    passed_count += 1
+
     return passed_count
 
 if __name__ == "__main__":
