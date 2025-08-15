@@ -1,4 +1,5 @@
 import re
+import sys
 
 def count_passed_scripts_from_file(file_path):
     passed_count = 0
