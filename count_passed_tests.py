@@ -1,7 +1,7 @@
 import re
 import sys
 
-def count_passed_scripts_from_file(file_path):
+def count_passed_scripts(file_path):
     passed_count = 0
 
     with open(file_path, encoding='utf-8') as f:
